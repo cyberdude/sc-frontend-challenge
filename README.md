@@ -1,77 +1,59 @@
 <center>
-     <h2>Software Engineer Challenge - Frontend</h2>
+     <h2>Software Engineer Challenge - Front-End</h2>
 </center>
- 
+
 **Assignment:**
 
-Design and implement a customer management system for the fancy broker agency.
+Design and implement a customer management system for the Fancy Broker Agency.
 
-1. Rules:
+1.  Rules:
 
-* You have 4 hours to complete the tasks, be careful with your time, make sure you understand the requirements correctly.
-* Try not to over-optimize. An MVP with good documentation counts more than a single polished component.
+- You have four (4) hours to complete the tasks. Be careful with your time, and make sure that you understand the requirements correctly.
+- Try not to over-optimize. An MVP with good documentation counts more than a single polished component.
 
+2.  User stories:
 
+- The broker Tom, would like to see a list of his customers.
+- The broker Tom, should be able to search in customer data.
+- The broker Tom, should be able to see basic statistics over his data.
 
-2. User stories:
+3.  Specifications:
 
-* The broker Tom, would like to see a list of his customers.
-* The broker Tom, should be able to search in customer data.
-* The broker Tom, should be able to see basic statistics over his data.
+- The front page should have this structure:
 
-3. Specifications:
+```
+[ Home | Contacts | Search | Help ]
 
-  * The front page should have this structure:
-  ```
-  [ Home | Contacts | Search | Help ]
-  
-  [ Content ]
-  
-  [ Footer ]
-  ```
-* **Home** should render some statistical information about the customers:
-  
-  1. Customer count.
-  2. Average Age.
-  3. [Standard deviation](https://en.wikipedia.org/wiki/Standard_deviation) of the amount they owe to the fancy broker company.
-  4. Google Maps with the locations of contacts.
-  
-* **Contact** section should render a view with 10 customers per page and you are able to paginate trough the data.
+[ Content ]
 
-* **Search**  Search section should be able to do a full text search through the data and display the results.
+[ Footer ]
+```
 
-Demo data can be found in `Data.json`
+- **Home** should render some statistical information about the customers:
 
-4. Deliverable:
+  1.  customer count,
+  2.  average age,
+  3.  [Standard deviation](https://en.wikipedia.org/wiki/Standard_deviation) of the amount they owe to the Fancy Broker Agency, and
+  4.  Google Maps with the locations of contacts.
 
-* You can use any language/technology/framework of your choice. But we will ask for the rationale of your decision. Since we are using Java Script React, a React app would be a plus!
-* The solution should include a comprehensive documentation how to run the app. Keep it simple!
-* You can provide a github link to the solution or send us a tar ball with the sourcecode. 
+- **Contact** section should render a view with ten (10) customers per page, and users are able to paginate trough the data.
 
-5. Bonus Points when:
+- **Search** Search section should be capable of a full text search through the data and display the results.
 
-* Dockerizing your application.
-* Writing tests for the critical parts of the app.
-* What are the critical structures of the application, what are the possible bottlenecks, what you had did when you had more time. We are curious of your thoughts! 
+Demo data can be found in `data.json`
 
-_The Bonus points don't have to be delivered on time - you can submit them later!_ 
+4.  Deliverables:
 
+- You can use any language/technology/framework of your choice, but we will ask for the rationale of your decision. Since we are using React with TypeScript, a React/TypeScript app would be a plus!
+- The solution should include a comprehensive documentation on how to run the app. Keep it simple!
+- You can provide a Github link to the solution or send us a tar ball with the source code.
 
-Looking forward for your result, have fun with this task and good luck! 
+5.  Bonus Points when:
 
+- dockerizing your application,
+- writing tests for the critical parts of the app, and
+- what are the critical structures of the application? What are the possible bottlenecks? What you would do if you had more time? We are curious of your thoughts.
 
+_The Bonus points don’t have to be delivered on time — you can submit them later._
 
-
-              
-
- 
-
-  
-
-
-
-
-
-
-
-
+We are looking forward to seeing your result. Have fun with this task and good luck!
