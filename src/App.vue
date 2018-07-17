@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <broker-header></broker-header>
-    <router-view/>
+    <router-view :key="$route.path"/>
   </div>
 </template>
 
@@ -12,6 +12,8 @@ export default {
   name: 'App',
   components: {
     BrokerHeader
+  },
+  mounted () {
   }
 }
 

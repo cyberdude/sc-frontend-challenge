@@ -59,6 +59,7 @@ export default {
     }
   },
   mounted () {
+    this.customers = data
   },
   methods: {
   },
@@ -92,7 +93,7 @@ export default {
       })
 
       var sumSquaredValue = 0
-      squaredValues.forEach(sVal => { sumSquaredValue += sVal})
+      squaredValues.forEach(sVal => { sumSquaredValue += sVal })
 
       const calculatedSquared = sumSquaredValue / (moneyOwnedSet.length - 1)
       return accounting.formatMoney(Math.sqrt(calculatedSquared))

@@ -10,7 +10,7 @@
           <div id="broker_menu">
             <ul>
               <li><router-link :to="'Home'">Home</router-link></li>
-              <li><router-link :to="'Contacts'">Contacts</router-link></li>
+              <li><router-link :to="'/contacts/1'">Contacts</router-link></li>
               <li><router-link :to="'Search'">Search</router-link></li>
               <li><router-link :to="'Help'">Help</router-link></li>
             </ul>
