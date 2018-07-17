@@ -2,20 +2,31 @@
   <div>
 
     <div class="container">
+      <div class="row page-title">
+        <div class="col-12">
+          <h1>Overview</h1>
+        </div>
+      </div>
       <div class="row stat-summary">
         <div class="col-12 col-md-4">
-          Customers
-          {{customerCount}}
+          <div class="content-wrap">
+            <div class="stat">{{customerCount}}</div>
+            <h5>Customers</h5>
+          </div>
         </div>
 
         <div class="col-12 col-md-4">
-          Average Age
-          {{averageAge}}
+          <div class="content-wrap">
+            <div class="stat">{{averageAge}}</div>
+            <h5>Average Age</h5>
+          </div>
         </div>
 
          <div class="col-12 col-md-4">
-          Standard Deviation
-          {{standardDeviation}}
+          <div class="content-wrap">
+            <div class="stat">{{standardDeviation}}</div>
+            <h5>Standard Deviation</h5>
+          </div>
         </div>
       </div>
 
@@ -104,7 +115,29 @@ export default {
 
 <style lang="scss" scoped>
 
+.page-title {
+  text-align: center;
+  h1 {
+    width: 100%;
+  }
+}
+
 .stat-summary {
-  height: 150px;
+  height: 120px;
+  margin-bottom: 30px;
+  > div {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    .content-wrap {
+      text-align: center;
+      .stat {
+        font-size: 2rem;
+      }
+    }
+  }
+  > div:not(:first-child) {
+    border-left: 1px solid #ccc;
+  }
 }
 </style>
